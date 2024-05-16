@@ -1,0 +1,24 @@
+include <stdio.h>
+
+int main() {
+    float valor1, valor2, divisao;
+
+    // Leitura dos dois valores
+    printf("Digite o primeiro valor: ");
+    scanf("%f", &valor1);
+
+    printf("Digite o segundo valor: ");
+    scanf("%f", &valor2);
+
+    // Verifica se o segundo valor é zero para evitar divisão por zero
+    if (valor2 == 0) {
+        printf("Erro: divisao por zero nao e permitida.\n");
+    } else {
+        // Calculando a divisão
+        divisao = valor1 / valor2;
+
+        // Exibindo a divisão
+        printf("%.2f dividido por %.2f e: %.2f\n", valor1, valor2, divisao);
+    }
+
+    return 0;
